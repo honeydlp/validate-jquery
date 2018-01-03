@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>validate-jq</title>
+</head>
+<body>
+  <form action="">
+      用户名：<input type="text" data-dv-required=true data-dv-required-mes="必填项">
+  </form>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="validate-jq.js"></script>
+  <script>
+    $(function(){
+      $('form')['validate-jq']();
+    });
+  </script>
+</body>
+</html>
